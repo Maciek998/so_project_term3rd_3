@@ -1,0 +1,860 @@
+Przykładowe dane:
+
+Liczba procesów: 20
+Liczba żądań stron: 10
+Liczba ramek w pamięci: 3
+
+Szczegóły procesów dla FCFS:
+ID: 5, Arrival: 2, Start: 2, Finish: 5, Waiting: 0
+ID: 13, Arrival: 3, Start: 5, Finish: 12, Waiting: 2
+ID: 19, Arrival: 3, Start: 12, Finish: 20, Waiting: 9
+ID: 4, Arrival: 19, Start: 20, Finish: 28, Waiting: 1
+ID: 11, Arrival: 30, Start: 30, Finish: 34, Waiting: 0
+ID: 1, Arrival: 35, Start: 35, Finish: 37, Waiting: 0
+ID: 0, Arrival: 41, Start: 41, Finish: 44, Waiting: 0
+ID: 14, Arrival: 50, Start: 50, Finish: 53, Waiting: 0
+ID: 2, Arrival: 57, Start: 57, Finish: 60, Waiting: 0
+ID: 8, Arrival: 59, Start: 60, Finish: 68, Waiting: 1
+ID: 16, Arrival: 62, Start: 68, Finish: 71, Waiting: 6
+ID: 9, Arrival: 66, Start: 71, Finish: 76, Waiting: 5
+ID: 12, Arrival: 87, Start: 87, Finish: 89, Waiting: 0
+ID: 18, Arrival: 89, Start: 89, Finish: 96, Waiting: 0
+ID: 10, Arrival: 91, Start: 96, Finish: 98, Waiting: 5
+ID: 17, Arrival: 91, Start: 98, Finish: 102, Waiting: 7
+ID: 15, Arrival: 94, Start: 102, Finish: 106, Waiting: 8
+ID: 3, Arrival: 96, Start: 106, Finish: 111, Waiting: 10
+ID: 6, Arrival: 96, Start: 111, Finish: 116, Waiting: 15
+ID: 7, Arrival: 98, Start: 116, Finish: 122, Waiting: 18
+
+Szczegóły procesów dla LCFS:
+ID: 22, Arrival: 3, Start: 3, Finish: 22, Waiting: 0
+ID: 39, Arrival: 20, Start: 22, Finish: 37, Waiting: 2
+ID: 34, Arrival: 37, Start: 37, Finish: 47, Waiting: 0
+ID: 26, Arrival: 32, Start: 47, Finish: 63, Waiting: 15
+ID: 23, Arrival: 62, Start: 63, Finish: 82, Waiting: 1
+ID: 32, Arrival: 64, Start: 82, Finish: 98, Waiting: 18
+ID: 29, Arrival: 96, Start: 98, Finish: 116, Waiting: 2
+ID: 27, Arrival: 100, Start: 116, Finish: 136, Waiting: 16
+ID: 30, Arrival: 86, Start: 136, Finish: 152, Waiting: 50
+ID: 35, Arrival: 59, Start: 152, Finish: 164, Waiting: 93
+ID: 28, Arrival: 55, Start: 164, Finish: 179, Waiting: 109
+ID: 36, Arrival: 52, Start: 179, Finish: 190, Waiting: 127
+ID: 33, Arrival: 32, Start: 190, Finish: 203, Waiting: 158
+ID: 24, Arrival: 19, Start: 203, Finish: 220, Waiting: 184
+ID: 25, Arrival: 18, Start: 220, Finish: 235, Waiting: 202
+ID: 31, Arrival: 17, Start: 235, Finish: 246, Waiting: 218
+ID: 38, Arrival: 17, Start: 246, Finish: 265, Waiting: 229
+ID: 37, Arrival: 15, Start: 265, Finish: 278, Waiting: 250
+ID: 21, Arrival: 11, Start: 278, Finish: 298, Waiting: 267
+ID: 20, Arrival: 9, Start: 298, Finish: 312, Waiting: 289
+Analiza FCFS: {'Average Waiting Time': 4.35, 'Average Turnaround Time': 8.95}
+Analiza LCFS: {'Average Waiting Time': 111.5, 'Average Turnaround Time': 126.95}
+Symulacja zakończona. Wyniki zapisane do 'results.csv'.
+
+Results.csv
+
+Algorithm,Average Waiting Time,Average Turnaround Time,Faults
+FCFS,4.35,8.95,N/A
+LCFS,111.5,126.95,N/A
+FIFO,N/A,N/A,8
+LRU,N/A,N/A,4
+
+
+wykres_1.png
+_______________________________________________________________
+
+Liczba procesów: 120
+Liczba żądań stron: 10
+Liczba ramek w pamięci: 13
+
+Szczegóły procesów dla FCFS:
+ID: 115, Arrival: 0, Start: 0, Finish: 4, Waiting: 0
+ID: 69, Arrival: 1, Start: 4, Finish: 12, Waiting: 3
+ID: 17, Arrival: 2, Start: 12, Finish: 15, Waiting: 10
+ID: 3, Arrival: 3, Start: 15, Finish: 25, Waiting: 12
+ID: 87, Arrival: 3, Start: 25, Finish: 29, Waiting: 22
+ID: 80, Arrival: 4, Start: 29, Finish: 36, Waiting: 25
+ID: 39, Arrival: 5, Start: 36, Finish: 42, Waiting: 31
+ID: 104, Arrival: 5, Start: 42, Finish: 45, Waiting: 37
+ID: 2, Arrival: 6, Start: 45, Finish: 52, Waiting: 39
+ID: 21, Arrival: 6, Start: 52, Finish: 59, Waiting: 46
+ID: 24, Arrival: 6, Start: 59, Finish: 66, Waiting: 53
+ID: 54, Arrival: 9, Start: 66, Finish: 67, Waiting: 57
+ID: 116, Arrival: 10, Start: 67, Finish: 69, Waiting: 57
+ID: 10, Arrival: 13, Start: 69, Finish: 74, Waiting: 56
+ID: 66, Arrival: 16, Start: 74, Finish: 77, Waiting: 58
+ID: 9, Arrival: 21, Start: 77, Finish: 85, Waiting: 56
+ID: 65, Arrival: 21, Start: 85, Finish: 88, Waiting: 64
+ID: 73, Arrival: 23, Start: 88, Finish: 89, Waiting: 65
+ID: 113, Arrival: 23, Start: 89, Finish: 90, Waiting: 66
+ID: 33, Arrival: 24, Start: 90, Finish: 98, Waiting: 66
+ID: 44, Arrival: 24, Start: 98, Finish: 101, Waiting: 74
+ID: 105, Arrival: 24, Start: 101, Finish: 108, Waiting: 77
+ID: 42, Arrival: 25, Start: 108, Finish: 112, Waiting: 83
+ID: 37, Arrival: 26, Start: 112, Finish: 113, Waiting: 86
+ID: 114, Arrival: 26, Start: 113, Finish: 116, Waiting: 87
+ID: 50, Arrival: 27, Start: 116, Finish: 121, Waiting: 89
+ID: 68, Arrival: 27, Start: 121, Finish: 125, Waiting: 94
+ID: 6, Arrival: 28, Start: 125, Finish: 134, Waiting: 97
+ID: 15, Arrival: 29, Start: 134, Finish: 135, Waiting: 105
+ID: 12, Arrival: 30, Start: 135, Finish: 144, Waiting: 105
+ID: 119, Arrival: 32, Start: 144, Finish: 151, Waiting: 112
+ID: 60, Arrival: 34, Start: 151, Finish: 160, Waiting: 117
+ID: 81, Arrival: 34, Start: 160, Finish: 170, Waiting: 126
+ID: 4, Arrival: 35, Start: 170, Finish: 173, Waiting: 135
+ID: 20, Arrival: 36, Start: 173, Finish: 174, Waiting: 137
+ID: 38, Arrival: 36, Start: 174, Finish: 180, Waiting: 138
+ID: 108, Arrival: 36, Start: 180, Finish: 187, Waiting: 144
+ID: 84, Arrival: 39, Start: 187, Finish: 189, Waiting: 148
+ID: 35, Arrival: 40, Start: 189, Finish: 190, Waiting: 149
+ID: 18, Arrival: 41, Start: 190, Finish: 194, Waiting: 149
+ID: 11, Arrival: 42, Start: 194, Finish: 199, Waiting: 152
+ID: 85, Arrival: 42, Start: 199, Finish: 202, Waiting: 157
+ID: 58, Arrival: 43, Start: 202, Finish: 212, Waiting: 159
+ID: 59, Arrival: 43, Start: 212, Finish: 216, Waiting: 169
+ID: 46, Arrival: 45, Start: 216, Finish: 223, Waiting: 171
+ID: 77, Arrival: 46, Start: 223, Finish: 224, Waiting: 177
+ID: 94, Arrival: 48, Start: 224, Finish: 230, Waiting: 176
+ID: 53, Arrival: 51, Start: 230, Finish: 236, Waiting: 179
+ID: 106, Arrival: 51, Start: 236, Finish: 241, Waiting: 185
+ID: 109, Arrival: 51, Start: 241, Finish: 244, Waiting: 190
+ID: 117, Arrival: 51, Start: 244, Finish: 248, Waiting: 193
+ID: 31, Arrival: 52, Start: 248, Finish: 256, Waiting: 196
+ID: 41, Arrival: 52, Start: 256, Finish: 261, Waiting: 204
+ID: 95, Arrival: 53, Start: 261, Finish: 265, Waiting: 208
+ID: 26, Arrival: 54, Start: 265, Finish: 266, Waiting: 211
+ID: 112, Arrival: 54, Start: 266, Finish: 272, Waiting: 212
+ID: 22, Arrival: 55, Start: 272, Finish: 279, Waiting: 217
+ID: 48, Arrival: 56, Start: 279, Finish: 285, Waiting: 223
+ID: 28, Arrival: 57, Start: 285, Finish: 295, Waiting: 228
+ID: 64, Arrival: 57, Start: 295, Finish: 301, Waiting: 238
+ID: 88, Arrival: 58, Start: 301, Finish: 311, Waiting: 243
+ID: 103, Arrival: 58, Start: 311, Finish: 313, Waiting: 253
+ID: 32, Arrival: 59, Start: 313, Finish: 321, Waiting: 254
+ID: 5, Arrival: 60, Start: 321, Finish: 329, Waiting: 261
+ID: 34, Arrival: 61, Start: 329, Finish: 335, Waiting: 268
+ID: 86, Arrival: 61, Start: 335, Finish: 342, Waiting: 274
+ID: 91, Arrival: 62, Start: 342, Finish: 351, Waiting: 280
+ID: 43, Arrival: 64, Start: 351, Finish: 355, Waiting: 287
+ID: 76, Arrival: 64, Start: 355, Finish: 358, Waiting: 291
+ID: 14, Arrival: 65, Start: 358, Finish: 359, Waiting: 293
+ID: 45, Arrival: 65, Start: 359, Finish: 369, Waiting: 294
+ID: 61, Arrival: 65, Start: 369, Finish: 379, Waiting: 304
+ID: 100, Arrival: 65, Start: 379, Finish: 380, Waiting: 314
+ID: 36, Arrival: 66, Start: 380, Finish: 390, Waiting: 314
+ID: 118, Arrival: 68, Start: 390, Finish: 395, Waiting: 322
+ID: 0, Arrival: 69, Start: 395, Finish: 403, Waiting: 326
+ID: 27, Arrival: 69, Start: 403, Finish: 404, Waiting: 334
+ID: 30, Arrival: 69, Start: 404, Finish: 405, Waiting: 335
+ID: 96, Arrival: 69, Start: 405, Finish: 409, Waiting: 336
+ID: 25, Arrival: 70, Start: 409, Finish: 418, Waiting: 339
+ID: 47, Arrival: 70, Start: 418, Finish: 421, Waiting: 348
+ID: 49, Arrival: 70, Start: 421, Finish: 428, Waiting: 351
+ID: 52, Arrival: 72, Start: 428, Finish: 430, Waiting: 356
+ID: 19, Arrival: 74, Start: 430, Finish: 431, Waiting: 356
+ID: 51, Arrival: 74, Start: 431, Finish: 438, Waiting: 357
+ID: 55, Arrival: 76, Start: 438, Finish: 440, Waiting: 362
+ID: 62, Arrival: 77, Start: 440, Finish: 442, Waiting: 363
+ID: 13, Arrival: 78, Start: 442, Finish: 445, Waiting: 364
+ID: 67, Arrival: 78, Start: 445, Finish: 450, Waiting: 367
+ID: 7, Arrival: 79, Start: 450, Finish: 455, Waiting: 371
+ID: 8, Arrival: 80, Start: 455, Finish: 465, Waiting: 375
+ID: 82, Arrival: 80, Start: 465, Finish: 467, Waiting: 385
+ID: 83, Arrival: 80, Start: 467, Finish: 469, Waiting: 387
+ID: 78, Arrival: 81, Start: 469, Finish: 477, Waiting: 388
+ID: 29, Arrival: 82, Start: 477, Finish: 482, Waiting: 395
+ID: 74, Arrival: 82, Start: 482, Finish: 487, Waiting: 400
+ID: 93, Arrival: 82, Start: 487, Finish: 494, Waiting: 405
+ID: 98, Arrival: 82, Start: 494, Finish: 496, Waiting: 412
+ID: 40, Arrival: 83, Start: 496, Finish: 504, Waiting: 413
+ID: 63, Arrival: 83, Start: 504, Finish: 510, Waiting: 421
+ID: 71, Arrival: 83, Start: 510, Finish: 512, Waiting: 427
+ID: 89, Arrival: 83, Start: 512, Finish: 515, Waiting: 429
+ID: 56, Arrival: 84, Start: 515, Finish: 518, Waiting: 431
+ID: 92, Arrival: 84, Start: 518, Finish: 523, Waiting: 434
+ID: 107, Arrival: 84, Start: 523, Finish: 528, Waiting: 439
+ID: 70, Arrival: 85, Start: 528, Finish: 533, Waiting: 443
+ID: 75, Arrival: 87, Start: 533, Finish: 535, Waiting: 446
+ID: 90, Arrival: 89, Start: 535, Finish: 537, Waiting: 446
+ID: 72, Arrival: 91, Start: 537, Finish: 542, Waiting: 446
+ID: 111, Arrival: 92, Start: 542, Finish: 549, Waiting: 450
+ID: 23, Arrival: 93, Start: 549, Finish: 551, Waiting: 456
+ID: 101, Arrival: 93, Start: 551, Finish: 561, Waiting: 458
+ID: 57, Arrival: 94, Start: 561, Finish: 569, Waiting: 467
+ID: 97, Arrival: 94, Start: 569, Finish: 574, Waiting: 475
+ID: 1, Arrival: 95, Start: 574, Finish: 583, Waiting: 479
+ID: 16, Arrival: 96, Start: 583, Finish: 584, Waiting: 487
+ID: 99, Arrival: 98, Start: 584, Finish: 591, Waiting: 486
+ID: 102, Arrival: 98, Start: 591, Finish: 601, Waiting: 493
+ID: 110, Arrival: 98, Start: 601, Finish: 610, Waiting: 503
+ID: 79, Arrival: 100, Start: 610, Finish: 615, Waiting: 510
+
+Szczegóły procesów dla LCFS:
+ID: 141, Arrival: 0, Start: 0, Finish: 12, Waiting: 0
+ID: 126, Arrival: 12, Start: 12, Finish: 32, Waiting: 0
+ID: 142, Arrival: 31, Start: 32, Finish: 45, Waiting: 1
+ID: 220, Arrival: 45, Start: 45, Finish: 62, Waiting: 0
+ID: 146, Arrival: 62, Start: 62, Finish: 80, Waiting: 0
+ID: 153, Arrival: 79, Start: 80, Finish: 99, Waiting: 1
+ID: 179, Arrival: 99, Start: 99, Finish: 112, Waiting: 0
+ID: 136, Arrival: 100, Start: 112, Finish: 123, Waiting: 12
+ID: 234, Arrival: 100, Start: 123, Finish: 140, Waiting: 23
+ID: 206, Arrival: 97, Start: 140, Finish: 153, Waiting: 43
+ID: 147, Arrival: 96, Start: 153, Finish: 171, Waiting: 57
+ID: 210, Arrival: 96, Start: 171, Finish: 185, Waiting: 75
+ID: 175, Arrival: 94, Start: 185, Finish: 199, Waiting: 91
+ID: 197, Arrival: 93, Start: 199, Finish: 216, Waiting: 106
+ID: 228, Arrival: 93, Start: 216, Finish: 233, Waiting: 123
+ID: 127, Arrival: 92, Start: 233, Finish: 243, Waiting: 141
+ID: 178, Arrival: 92, Start: 243, Finish: 256, Waiting: 151
+ID: 238, Arrival: 92, Start: 256, Finish: 275, Waiting: 164
+ID: 177, Arrival: 90, Start: 275, Finish: 286, Waiting: 185
+ID: 214, Arrival: 90, Start: 286, Finish: 301, Waiting: 196
+ID: 193, Arrival: 89, Start: 301, Finish: 311, Waiting: 212
+ID: 236, Arrival: 89, Start: 311, Finish: 324, Waiting: 222
+ID: 239, Arrival: 88, Start: 324, Finish: 340, Waiting: 236
+ID: 157, Arrival: 87, Start: 340, Finish: 358, Waiting: 253
+ID: 165, Arrival: 87, Start: 358, Finish: 373, Waiting: 271
+ID: 125, Arrival: 84, Start: 373, Finish: 390, Waiting: 289
+ID: 131, Arrival: 84, Start: 390, Finish: 401, Waiting: 306
+ID: 200, Arrival: 84, Start: 401, Finish: 417, Waiting: 317
+ID: 173, Arrival: 83, Start: 417, Finish: 433, Waiting: 334
+ID: 209, Arrival: 83, Start: 433, Finish: 450, Waiting: 350
+ID: 221, Arrival: 83, Start: 450, Finish: 463, Waiting: 367
+ID: 167, Arrival: 82, Start: 463, Finish: 482, Waiting: 381
+ID: 166, Arrival: 78, Start: 482, Finish: 498, Waiting: 404
+ID: 184, Arrival: 76, Start: 498, Finish: 513, Waiting: 422
+ID: 148, Arrival: 75, Start: 513, Finish: 532, Waiting: 438
+ID: 176, Arrival: 73, Start: 532, Finish: 545, Waiting: 459
+ID: 222, Arrival: 73, Start: 545, Finish: 558, Waiting: 472
+ID: 122, Arrival: 72, Start: 558, Finish: 572, Waiting: 486
+ID: 144, Arrival: 71, Start: 572, Finish: 588, Waiting: 501
+ID: 151, Arrival: 71, Start: 588, Finish: 606, Waiting: 517
+ID: 187, Arrival: 71, Start: 606, Finish: 619, Waiting: 535
+ID: 202, Arrival: 71, Start: 619, Finish: 632, Waiting: 548
+ID: 218, Arrival: 71, Start: 632, Finish: 648, Waiting: 561
+ID: 201, Arrival: 70, Start: 648, Finish: 662, Waiting: 578
+ID: 192, Arrival: 67, Start: 662, Finish: 678, Waiting: 595
+ID: 215, Arrival: 67, Start: 678, Finish: 689, Waiting: 611
+ID: 194, Arrival: 66, Start: 689, Finish: 703, Waiting: 623
+ID: 208, Arrival: 66, Start: 703, Finish: 717, Waiting: 637
+ID: 163, Arrival: 65, Start: 717, Finish: 732, Waiting: 652
+ID: 138, Arrival: 64, Start: 732, Finish: 750, Waiting: 668
+ID: 150, Arrival: 64, Start: 750, Finish: 763, Waiting: 686
+ID: 152, Arrival: 64, Start: 763, Finish: 782, Waiting: 699
+ID: 185, Arrival: 63, Start: 782, Finish: 796, Waiting: 719
+ID: 190, Arrival: 63, Start: 796, Finish: 809, Waiting: 733
+ID: 191, Arrival: 63, Start: 809, Finish: 827, Waiting: 746
+ID: 226, Arrival: 62, Start: 827, Finish: 846, Waiting: 765
+ID: 120, Arrival: 61, Start: 846, Finish: 861, Waiting: 785
+ID: 149, Arrival: 60, Start: 861, Finish: 876, Waiting: 801
+ID: 164, Arrival: 60, Start: 876, Finish: 896, Waiting: 816
+ID: 212, Arrival: 60, Start: 896, Finish: 907, Waiting: 836
+ID: 172, Arrival: 59, Start: 907, Finish: 918, Waiting: 848
+ID: 139, Arrival: 58, Start: 918, Finish: 934, Waiting: 860
+ID: 145, Arrival: 58, Start: 934, Finish: 948, Waiting: 876
+ID: 154, Arrival: 58, Start: 948, Finish: 961, Waiting: 890
+ID: 186, Arrival: 57, Start: 961, Finish: 973, Waiting: 904
+ID: 181, Arrival: 56, Start: 973, Finish: 983, Waiting: 917
+ID: 232, Arrival: 53, Start: 983, Finish: 1001, Waiting: 930
+ID: 182, Arrival: 52, Start: 1001, Finish: 1020, Waiting: 949
+ID: 227, Arrival: 52, Start: 1020, Finish: 1034, Waiting: 968
+ID: 135, Arrival: 51, Start: 1034, Finish: 1052, Waiting: 983
+ID: 129, Arrival: 49, Start: 1052, Finish: 1063, Waiting: 1003
+ID: 188, Arrival: 49, Start: 1063, Finish: 1083, Waiting: 1014
+ID: 162, Arrival: 48, Start: 1083, Finish: 1101, Waiting: 1035
+ID: 235, Arrival: 45, Start: 1101, Finish: 1115, Waiting: 1056
+ID: 211, Arrival: 44, Start: 1115, Finish: 1132, Waiting: 1071
+ID: 189, Arrival: 43, Start: 1132, Finish: 1145, Waiting: 1089
+ID: 216, Arrival: 43, Start: 1145, Finish: 1159, Waiting: 1102
+ID: 130, Arrival: 42, Start: 1159, Finish: 1177, Waiting: 1117
+ID: 132, Arrival: 42, Start: 1177, Finish: 1193, Waiting: 1135
+ID: 196, Arrival: 39, Start: 1193, Finish: 1207, Waiting: 1154
+ID: 207, Arrival: 39, Start: 1207, Finish: 1218, Waiting: 1168
+ID: 224, Arrival: 39, Start: 1218, Finish: 1233, Waiting: 1179
+ID: 205, Arrival: 38, Start: 1233, Finish: 1249, Waiting: 1195
+ID: 237, Arrival: 37, Start: 1249, Finish: 1262, Waiting: 1212
+ID: 219, Arrival: 36, Start: 1262, Finish: 1272, Waiting: 1226
+ID: 133, Arrival: 35, Start: 1272, Finish: 1283, Waiting: 1237
+ID: 225, Arrival: 35, Start: 1283, Finish: 1297, Waiting: 1248
+ID: 159, Arrival: 34, Start: 1297, Finish: 1312, Waiting: 1263
+ID: 160, Arrival: 33, Start: 1312, Finish: 1327, Waiting: 1279
+ID: 198, Arrival: 33, Start: 1327, Finish: 1339, Waiting: 1294
+ID: 213, Arrival: 33, Start: 1339, Finish: 1350, Waiting: 1306
+ID: 143, Arrival: 31, Start: 1350, Finish: 1364, Waiting: 1319
+ID: 203, Arrival: 30, Start: 1364, Finish: 1380, Waiting: 1334
+ID: 137, Arrival: 28, Start: 1380, Finish: 1397, Waiting: 1352
+ID: 155, Arrival: 28, Start: 1397, Finish: 1408, Waiting: 1369
+ID: 171, Arrival: 28, Start: 1408, Finish: 1418, Waiting: 1380
+ID: 170, Arrival: 21, Start: 1418, Finish: 1429, Waiting: 1397
+ID: 230, Arrival: 21, Start: 1429, Finish: 1442, Waiting: 1408
+ID: 204, Arrival: 20, Start: 1442, Finish: 1459, Waiting: 1422
+ID: 168, Arrival: 19, Start: 1459, Finish: 1477, Waiting: 1440
+ID: 161, Arrival: 16, Start: 1477, Finish: 1495, Waiting: 1461
+ID: 195, Arrival: 13, Start: 1495, Finish: 1511, Waiting: 1482
+ID: 199, Arrival: 13, Start: 1511, Finish: 1531, Waiting: 1498
+ID: 231, Arrival: 13, Start: 1531, Finish: 1546, Waiting: 1518
+ID: 169, Arrival: 12, Start: 1546, Finish: 1562, Waiting: 1534
+ID: 174, Arrival: 12, Start: 1562, Finish: 1575, Waiting: 1550
+ID: 229, Arrival: 12, Start: 1575, Finish: 1587, Waiting: 1563
+ID: 124, Arrival: 11, Start: 1587, Finish: 1604, Waiting: 1576
+ID: 156, Arrival: 11, Start: 1604, Finish: 1617, Waiting: 1593
+ID: 217, Arrival: 10, Start: 1617, Finish: 1630, Waiting: 1607
+ID: 233, Arrival: 10, Start: 1630, Finish: 1643, Waiting: 1620
+ID: 158, Arrival: 8, Start: 1643, Finish: 1659, Waiting: 1635
+ID: 223, Arrival: 8, Start: 1659, Finish: 1669, Waiting: 1651
+ID: 123, Arrival: 7, Start: 1669, Finish: 1679, Waiting: 1662
+ID: 180, Arrival: 7, Start: 1679, Finish: 1695, Waiting: 1672
+ID: 134, Arrival: 4, Start: 1695, Finish: 1713, Waiting: 1691
+ID: 128, Arrival: 3, Start: 1713, Finish: 1725, Waiting: 1710
+ID: 140, Arrival: 2, Start: 1725, Finish: 1742, Waiting: 1723
+ID: 183, Arrival: 2, Start: 1742, Finish: 1759, Waiting: 1740
+ID: 121, Arrival: 1, Start: 1759, Finish: 1773, Waiting: 1758
+Analiza FCFS: {'Average Waiting Time': 246.85833333333332, 'Average Turnaround Time': 251.98333333333332}
+Analiza LCFS: {'Average Waiting Time': 836.4416666666667, 'Average Turnaround Time': 851.2166666666667}
+Symulacja zakończona. Wyniki zapisane do 'results.csv'.
+
+Results.csv
+
+Algorithm,Average Waiting Time,Average Turnaround Time,Faults
+FCFS,246.85833333333332,251.98333333333332,N/A
+LCFS,836.4416666666667,851.2166666666667,N/A
+FIFO,N/A,N/A,6
+LRU,N/A,N/A,5
+
+
+wykres_2.png
+_______________________________________________________________
+
+Liczba procesów: 15
+Liczba żądań stron: 3
+Liczba ramek w pamięci: 4
+
+Szczegóły procesów dla FCFS:
+ID: 14, Arrival: 24, Start: 24, Finish: 28, Waiting: 0
+ID: 9, Arrival: 27, Start: 28, Finish: 35, Waiting: 1
+ID: 3, Arrival: 36, Start: 36, Finish: 46, Waiting: 0
+ID: 10, Arrival: 44, Start: 46, Finish: 50, Waiting: 2
+ID: 0, Arrival: 63, Start: 63, Finish: 66, Waiting: 0
+ID: 1, Arrival: 65, Start: 66, Finish: 71, Waiting: 1
+ID: 5, Arrival: 76, Start: 76, Finish: 79, Waiting: 0
+ID: 7, Arrival: 76, Start: 79, Finish: 85, Waiting: 3
+ID: 2, Arrival: 78, Start: 85, Finish: 89, Waiting: 7
+ID: 8, Arrival: 78, Start: 89, Finish: 93, Waiting: 11
+ID: 13, Arrival: 78, Start: 93, Finish: 94, Waiting: 15
+ID: 12, Arrival: 81, Start: 94, Finish: 98, Waiting: 13
+ID: 4, Arrival: 84, Start: 98, Finish: 101, Waiting: 14
+ID: 11, Arrival: 90, Start: 101, Finish: 111, Waiting: 11
+ID: 6, Arrival: 93, Start: 111, Finish: 119, Waiting: 18
+
+Szczegóły procesów dla LCFS:
+ID: 17, Arrival: 1, Start: 1, Finish: 14, Waiting: 0
+ID: 29, Arrival: 9, Start: 14, Finish: 34, Waiting: 5
+ID: 28, Arrival: 33, Start: 34, Finish: 51, Waiting: 1
+ID: 15, Arrival: 50, Start: 51, Finish: 71, Waiting: 1
+ID: 16, Arrival: 70, Start: 71, Finish: 89, Waiting: 1
+ID: 22, Arrival: 84, Start: 89, Finish: 100, Waiting: 5
+ID: 24, Arrival: 95, Start: 100, Finish: 116, Waiting: 5
+ID: 20, Arrival: 76, Start: 116, Finish: 130, Waiting: 40
+ID: 21, Arrival: 75, Start: 130, Finish: 147, Waiting: 55
+ID: 25, Arrival: 74, Start: 147, Finish: 157, Waiting: 73
+ID: 19, Arrival: 43, Start: 157, Finish: 177, Waiting: 114
+ID: 18, Arrival: 37, Start: 177, Finish: 194, Waiting: 140
+ID: 26, Arrival: 30, Start: 194, Finish: 204, Waiting: 164
+ID: 27, Arrival: 30, Start: 204, Finish: 223, Waiting: 174
+ID: 23, Arrival: 20, Start: 223, Finish: 242, Waiting: 203
+Analiza FCFS: {'Average Waiting Time': 6.4, 'Average Turnaround Time': 11.466666666666667}
+Analiza LCFS: {'Average Waiting Time': 65.4, 'Average Turnaround Time': 81.46666666666667}
+Symulacja zakończona. Wyniki zapisane do 'results.csv'.
+
+Results.csv
+
+Algorithm,Average Waiting Time,Average Turnaround Time,Faults
+FCFS,6.4,11.466666666666667,N/A
+LCFS,65.4,81.46666666666667,N/A
+FIFO,N/A,N/A,3
+LRU,N/A,N/A,2
+
+
+wykres_3.png
+
+
+_______________________________________________________________
+
+Liczba procesów: 85
+Liczba żądań stron: 14
+Liczba ramek w pamięci: 12
+
+Szczegóły procesów dla FCFS:
+ID: 3, Arrival: 0, Start: 0, Finish: 1, Waiting: 0
+ID: 4, Arrival: 1, Start: 1, Finish: 4, Waiting: 0
+ID: 21, Arrival: 1, Start: 4, Finish: 8, Waiting: 3
+ID: 76, Arrival: 1, Start: 8, Finish: 14, Waiting: 7
+ID: 49, Arrival: 4, Start: 14, Finish: 18, Waiting: 10
+ID: 53, Arrival: 6, Start: 18, Finish: 26, Waiting: 12
+ID: 32, Arrival: 7, Start: 26, Finish: 28, Waiting: 19
+ID: 59, Arrival: 7, Start: 28, Finish: 37, Waiting: 21
+ID: 0, Arrival: 9, Start: 37, Finish: 44, Waiting: 28
+ID: 45, Arrival: 9, Start: 44, Finish: 47, Waiting: 35
+ID: 35, Arrival: 10, Start: 47, Finish: 48, Waiting: 37
+ID: 6, Arrival: 14, Start: 48, Finish: 49, Waiting: 34
+ID: 39, Arrival: 14, Start: 49, Finish: 59, Waiting: 35
+ID: 81, Arrival: 16, Start: 59, Finish: 63, Waiting: 43
+ID: 11, Arrival: 17, Start: 63, Finish: 64, Waiting: 46
+ID: 62, Arrival: 17, Start: 64, Finish: 65, Waiting: 47
+ID: 16, Arrival: 18, Start: 65, Finish: 67, Waiting: 47
+ID: 2, Arrival: 19, Start: 67, Finish: 73, Waiting: 48
+ID: 44, Arrival: 19, Start: 73, Finish: 83, Waiting: 54
+ID: 77, Arrival: 20, Start: 83, Finish: 85, Waiting: 63
+ID: 29, Arrival: 21, Start: 85, Finish: 94, Waiting: 64
+ID: 17, Arrival: 23, Start: 94, Finish: 100, Waiting: 71
+ID: 42, Arrival: 24, Start: 100, Finish: 105, Waiting: 76
+ID: 31, Arrival: 25, Start: 105, Finish: 113, Waiting: 80
+ID: 8, Arrival: 26, Start: 113, Finish: 120, Waiting: 87
+ID: 67, Arrival: 26, Start: 120, Finish: 129, Waiting: 94
+ID: 46, Arrival: 29, Start: 129, Finish: 135, Waiting: 100
+ID: 9, Arrival: 30, Start: 135, Finish: 140, Waiting: 105
+ID: 56, Arrival: 30, Start: 140, Finish: 144, Waiting: 110
+ID: 69, Arrival: 32, Start: 144, Finish: 147, Waiting: 112
+ID: 20, Arrival: 34, Start: 147, Finish: 148, Waiting: 113
+ID: 52, Arrival: 35, Start: 148, Finish: 152, Waiting: 113
+ID: 58, Arrival: 37, Start: 152, Finish: 156, Waiting: 115
+ID: 24, Arrival: 40, Start: 156, Finish: 161, Waiting: 116
+ID: 40, Arrival: 40, Start: 161, Finish: 162, Waiting: 121
+ID: 60, Arrival: 42, Start: 162, Finish: 165, Waiting: 120
+ID: 26, Arrival: 43, Start: 165, Finish: 174, Waiting: 122
+ID: 43, Arrival: 45, Start: 174, Finish: 181, Waiting: 129
+ID: 38, Arrival: 47, Start: 181, Finish: 183, Waiting: 134
+ID: 47, Arrival: 47, Start: 183, Finish: 190, Waiting: 136
+ID: 78, Arrival: 50, Start: 190, Finish: 199, Waiting: 140
+ID: 23, Arrival: 52, Start: 199, Finish: 201, Waiting: 147
+ID: 74, Arrival: 52, Start: 201, Finish: 204, Waiting: 149
+ID: 75, Arrival: 52, Start: 204, Finish: 205, Waiting: 152
+ID: 30, Arrival: 53, Start: 205, Finish: 207, Waiting: 152
+ID: 70, Arrival: 56, Start: 207, Finish: 215, Waiting: 151
+ID: 79, Arrival: 57, Start: 215, Finish: 224, Waiting: 158
+ID: 5, Arrival: 58, Start: 224, Finish: 227, Waiting: 166
+ID: 15, Arrival: 59, Start: 227, Finish: 230, Waiting: 168
+ID: 22, Arrival: 59, Start: 230, Finish: 239, Waiting: 171
+ID: 73, Arrival: 59, Start: 239, Finish: 243, Waiting: 180
+ID: 10, Arrival: 60, Start: 243, Finish: 247, Waiting: 183
+ID: 18, Arrival: 60, Start: 247, Finish: 256, Waiting: 187
+ID: 55, Arrival: 60, Start: 256, Finish: 257, Waiting: 196
+ID: 65, Arrival: 61, Start: 257, Finish: 258, Waiting: 196
+ID: 34, Arrival: 64, Start: 258, Finish: 267, Waiting: 194
+ID: 7, Arrival: 65, Start: 267, Finish: 274, Waiting: 202
+ID: 19, Arrival: 65, Start: 274, Finish: 277, Waiting: 209
+ID: 61, Arrival: 65, Start: 277, Finish: 282, Waiting: 212
+ID: 80, Arrival: 66, Start: 282, Finish: 290, Waiting: 216
+ID: 36, Arrival: 67, Start: 290, Finish: 298, Waiting: 223
+ID: 28, Arrival: 68, Start: 298, Finish: 305, Waiting: 230
+ID: 13, Arrival: 70, Start: 305, Finish: 312, Waiting: 235
+ID: 66, Arrival: 70, Start: 312, Finish: 315, Waiting: 242
+ID: 83, Arrival: 73, Start: 315, Finish: 325, Waiting: 242
+ID: 12, Arrival: 74, Start: 325, Finish: 332, Waiting: 251
+ID: 14, Arrival: 74, Start: 332, Finish: 339, Waiting: 258
+ID: 72, Arrival: 74, Start: 339, Finish: 345, Waiting: 265
+ID: 82, Arrival: 74, Start: 345, Finish: 346, Waiting: 271
+ID: 51, Arrival: 75, Start: 346, Finish: 351, Waiting: 271
+ID: 68, Arrival: 75, Start: 351, Finish: 361, Waiting: 276
+ID: 25, Arrival: 76, Start: 361, Finish: 363, Waiting: 285
+ID: 64, Arrival: 79, Start: 363, Finish: 373, Waiting: 284
+ID: 41, Arrival: 80, Start: 373, Finish: 382, Waiting: 293
+ID: 84, Arrival: 81, Start: 382, Finish: 386, Waiting: 301
+ID: 63, Arrival: 82, Start: 386, Finish: 392, Waiting: 304
+ID: 33, Arrival: 83, Start: 392, Finish: 395, Waiting: 309
+ID: 71, Arrival: 83, Start: 395, Finish: 399, Waiting: 312
+ID: 37, Arrival: 84, Start: 399, Finish: 404, Waiting: 315
+ID: 54, Arrival: 84, Start: 404, Finish: 409, Waiting: 320
+ID: 48, Arrival: 91, Start: 409, Finish: 415, Waiting: 318
+ID: 57, Arrival: 91, Start: 415, Finish: 425, Waiting: 324
+ID: 50, Arrival: 97, Start: 425, Finish: 431, Waiting: 328
+ID: 1, Arrival: 100, Start: 431, Finish: 439, Waiting: 331
+ID: 27, Arrival: 100, Start: 439, Finish: 441, Waiting: 339
+
+Szczegóły procesów dla LCFS:
+ID: 121, Arrival: 0, Start: 0, Finish: 20, Waiting: 0
+ID: 167, Arrival: 20, Start: 20, Finish: 37, Waiting: 0
+ID: 135, Arrival: 37, Start: 37, Finish: 47, Waiting: 0
+ID: 147, Arrival: 44, Start: 47, Finish: 65, Waiting: 3
+ID: 164, Arrival: 65, Start: 65, Finish: 82, Waiting: 0
+ID: 87, Arrival: 82, Start: 82, Finish: 101, Waiting: 0
+ID: 106, Arrival: 100, Start: 101, Finish: 114, Waiting: 1
+ID: 117, Arrival: 97, Start: 114, Finish: 124, Waiting: 17
+ID: 134, Arrival: 97, Start: 124, Finish: 134, Waiting: 27
+ID: 130, Arrival: 95, Start: 134, Finish: 151, Waiting: 39
+ID: 148, Arrival: 95, Start: 151, Finish: 168, Waiting: 56
+ID: 99, Arrival: 94, Start: 168, Finish: 180, Waiting: 74
+ID: 102, Arrival: 94, Start: 180, Finish: 199, Waiting: 86
+ID: 141, Arrival: 91, Start: 199, Finish: 209, Waiting: 108
+ID: 139, Arrival: 90, Start: 209, Finish: 219, Waiting: 119
+ID: 105, Arrival: 87, Start: 219, Finish: 233, Waiting: 132
+ID: 131, Arrival: 87, Start: 233, Finish: 250, Waiting: 146
+ID: 103, Arrival: 83, Start: 250, Finish: 265, Waiting: 167
+ID: 152, Arrival: 82, Start: 265, Finish: 281, Waiting: 183
+ID: 137, Arrival: 81, Start: 281, Finish: 297, Waiting: 200
+ID: 149, Arrival: 80, Start: 297, Finish: 307, Waiting: 217
+ID: 101, Arrival: 79, Start: 307, Finish: 317, Waiting: 228
+ID: 143, Arrival: 79, Start: 317, Finish: 327, Waiting: 238
+ID: 169, Arrival: 78, Start: 327, Finish: 344, Waiting: 249
+ID: 111, Arrival: 76, Start: 344, Finish: 362, Waiting: 268
+ID: 115, Arrival: 76, Start: 362, Finish: 376, Waiting: 286
+ID: 118, Arrival: 76, Start: 376, Finish: 392, Waiting: 300
+ID: 160, Arrival: 76, Start: 392, Finish: 404, Waiting: 316
+ID: 140, Arrival: 75, Start: 404, Finish: 418, Waiting: 329
+ID: 153, Arrival: 75, Start: 418, Finish: 433, Waiting: 343
+ID: 112, Arrival: 71, Start: 433, Finish: 446, Waiting: 362
+ID: 90, Arrival: 69, Start: 446, Finish: 464, Waiting: 377
+ID: 91, Arrival: 69, Start: 464, Finish: 484, Waiting: 395
+ID: 93, Arrival: 69, Start: 484, Finish: 504, Waiting: 415
+ID: 96, Arrival: 69, Start: 504, Finish: 517, Waiting: 435
+ID: 107, Arrival: 69, Start: 517, Finish: 530, Waiting: 448
+ID: 142, Arrival: 64, Start: 530, Finish: 541, Waiting: 466
+ID: 159, Arrival: 63, Start: 541, Finish: 551, Waiting: 478
+ID: 88, Arrival: 57, Start: 551, Finish: 565, Waiting: 494
+ID: 124, Arrival: 56, Start: 565, Finish: 582, Waiting: 509
+ID: 156, Arrival: 56, Start: 582, Finish: 596, Waiting: 526
+ID: 92, Arrival: 55, Start: 596, Finish: 610, Waiting: 541
+ID: 133, Arrival: 55, Start: 610, Finish: 622, Waiting: 555
+ID: 86, Arrival: 54, Start: 622, Finish: 632, Waiting: 568
+ID: 89, Arrival: 54, Start: 632, Finish: 642, Waiting: 578
+ID: 98, Arrival: 54, Start: 642, Finish: 654, Waiting: 588
+ID: 145, Arrival: 54, Start: 654, Finish: 668, Waiting: 600
+ID: 100, Arrival: 53, Start: 668, Finish: 680, Waiting: 615
+ID: 165, Arrival: 53, Start: 680, Finish: 699, Waiting: 627
+ID: 113, Arrival: 51, Start: 699, Finish: 713, Waiting: 648
+ID: 97, Arrival: 50, Start: 713, Finish: 726, Waiting: 663
+ID: 136, Arrival: 50, Start: 726, Finish: 736, Waiting: 676
+ID: 126, Arrival: 48, Start: 736, Finish: 749, Waiting: 688
+ID: 128, Arrival: 48, Start: 749, Finish: 763, Waiting: 701
+ID: 162, Arrival: 48, Start: 763, Finish: 778, Waiting: 715
+ID: 120, Arrival: 43, Start: 778, Finish: 790, Waiting: 735
+ID: 125, Arrival: 43, Start: 790, Finish: 810, Waiting: 747
+ID: 116, Arrival: 42, Start: 810, Finish: 820, Waiting: 768
+ID: 146, Arrival: 42, Start: 820, Finish: 833, Waiting: 778
+ID: 138, Arrival: 41, Start: 833, Finish: 848, Waiting: 792
+ID: 109, Arrival: 40, Start: 848, Finish: 863, Waiting: 808
+ID: 123, Arrival: 36, Start: 863, Finish: 881, Waiting: 827
+ID: 104, Arrival: 29, Start: 881, Finish: 891, Waiting: 852
+ID: 119, Arrival: 26, Start: 891, Finish: 902, Waiting: 865
+ID: 161, Arrival: 25, Start: 902, Finish: 918, Waiting: 877
+ID: 108, Arrival: 24, Start: 918, Finish: 931, Waiting: 894
+ID: 168, Arrival: 22, Start: 931, Finish: 950, Waiting: 909
+ID: 132, Arrival: 21, Start: 950, Finish: 964, Waiting: 929
+ID: 155, Arrival: 21, Start: 964, Finish: 977, Waiting: 943
+ID: 95, Arrival: 19, Start: 977, Finish: 990, Waiting: 958
+ID: 94, Arrival: 15, Start: 990, Finish: 1004, Waiting: 975
+ID: 110, Arrival: 15, Start: 1004, Finish: 1016, Waiting: 989
+ID: 158, Arrival: 15, Start: 1016, Finish: 1026, Waiting: 1001
+ID: 122, Arrival: 14, Start: 1026, Finish: 1038, Waiting: 1012
+ID: 144, Arrival: 14, Start: 1038, Finish: 1057, Waiting: 1024
+ID: 154, Arrival: 13, Start: 1057, Finish: 1069, Waiting: 1044
+ID: 163, Arrival: 11, Start: 1069, Finish: 1079, Waiting: 1058
+ID: 114, Arrival: 9, Start: 1079, Finish: 1094, Waiting: 1070
+ID: 166, Arrival: 9, Start: 1094, Finish: 1108, Waiting: 1085
+ID: 85, Arrival: 8, Start: 1108, Finish: 1124, Waiting: 1100
+ID: 129, Arrival: 4, Start: 1124, Finish: 1134, Waiting: 1120
+ID: 127, Arrival: 3, Start: 1134, Finish: 1150, Waiting: 1131
+ID: 157, Arrival: 3, Start: 1150, Finish: 1168, Waiting: 1147
+ID: 150, Arrival: 2, Start: 1168, Finish: 1182, Waiting: 1166
+ID: 151, Arrival: 0, Start: 1182, Finish: 1199, Waiting: 1182
+Analiza FCFS: {'Average Waiting Time': 157.21176470588236, 'Average Turnaround Time': 162.4}
+Analiza LCFS: {'Average Waiting Time': 548.0705882352942, 'Average Turnaround Time': 562.1764705882352}
+Symulacja zakończona. Wyniki zapisane do 'results.csv'.
+
+Results.csv
+
+Algorithm,Average Waiting Time,Average Turnaround Time,Faults
+FCFS,157.21176470588236,162.4,N/A
+LCFS,548.0705882352942,562.1764705882352,N/A
+FIFO,N/A,N/A,7
+LRU,N/A,N/A,4
+
+
+wykres_4.png
+
+
+_______________________________________________________________
+
+Liczba procesów: 65
+Liczba żądań stron: 53
+Liczba ramek w pamięci: 67
+
+Szczegóły procesów dla FCFS:
+ID: 33, Arrival: 0, Start: 0, Finish: 8, Waiting: 0
+ID: 4, Arrival: 1, Start: 8, Finish: 9, Waiting: 7
+ID: 49, Arrival: 1, Start: 9, Finish: 16, Waiting: 8
+ID: 1, Arrival: 3, Start: 16, Finish: 17, Waiting: 13
+ID: 10, Arrival: 5, Start: 17, Finish: 21, Waiting: 12
+ID: 26, Arrival: 6, Start: 21, Finish: 24, Waiting: 15
+ID: 13, Arrival: 7, Start: 24, Finish: 31, Waiting: 17
+ID: 31, Arrival: 7, Start: 31, Finish: 35, Waiting: 24
+ID: 21, Arrival: 8, Start: 35, Finish: 38, Waiting: 27
+ID: 22, Arrival: 9, Start: 38, Finish: 42, Waiting: 29
+ID: 37, Arrival: 10, Start: 42, Finish: 46, Waiting: 32
+ID: 7, Arrival: 12, Start: 46, Finish: 50, Waiting: 34
+ID: 2, Arrival: 16, Start: 50, Finish: 52, Waiting: 34
+ID: 60, Arrival: 17, Start: 52, Finish: 59, Waiting: 35
+ID: 12, Arrival: 18, Start: 59, Finish: 66, Waiting: 41
+ID: 17, Arrival: 19, Start: 66, Finish: 72, Waiting: 47
+ID: 46, Arrival: 19, Start: 72, Finish: 77, Waiting: 53
+ID: 36, Arrival: 20, Start: 77, Finish: 87, Waiting: 57
+ID: 48, Arrival: 20, Start: 87, Finish: 95, Waiting: 67
+ID: 8, Arrival: 21, Start: 95, Finish: 105, Waiting: 74
+ID: 20, Arrival: 21, Start: 105, Finish: 106, Waiting: 84
+ID: 57, Arrival: 22, Start: 106, Finish: 113, Waiting: 84
+ID: 55, Arrival: 29, Start: 113, Finish: 115, Waiting: 84
+ID: 16, Arrival: 30, Start: 115, Finish: 122, Waiting: 85
+ID: 39, Arrival: 34, Start: 122, Finish: 126, Waiting: 88
+ID: 28, Arrival: 36, Start: 126, Finish: 132, Waiting: 90
+ID: 24, Arrival: 40, Start: 132, Finish: 137, Waiting: 92
+ID: 29, Arrival: 40, Start: 137, Finish: 142, Waiting: 97
+ID: 52, Arrival: 40, Start: 142, Finish: 144, Waiting: 102
+ID: 14, Arrival: 41, Start: 144, Finish: 151, Waiting: 103
+ID: 44, Arrival: 48, Start: 151, Finish: 156, Waiting: 103
+ID: 53, Arrival: 50, Start: 156, Finish: 159, Waiting: 106
+ID: 40, Arrival: 52, Start: 159, Finish: 168, Waiting: 107
+ID: 54, Arrival: 53, Start: 168, Finish: 172, Waiting: 115
+ID: 38, Arrival: 57, Start: 172, Finish: 174, Waiting: 115
+ID: 15, Arrival: 59, Start: 174, Finish: 176, Waiting: 115
+ID: 32, Arrival: 61, Start: 176, Finish: 180, Waiting: 115
+ID: 5, Arrival: 65, Start: 180, Finish: 188, Waiting: 115
+ID: 27, Arrival: 65, Start: 188, Finish: 198, Waiting: 123
+ID: 3, Arrival: 66, Start: 198, Finish: 199, Waiting: 132
+ID: 62, Arrival: 67, Start: 199, Finish: 201, Waiting: 132
+ID: 56, Arrival: 70, Start: 201, Finish: 208, Waiting: 131
+ID: 23, Arrival: 71, Start: 208, Finish: 211, Waiting: 137
+ID: 18, Arrival: 73, Start: 211, Finish: 214, Waiting: 138
+ID: 19, Arrival: 73, Start: 214, Finish: 220, Waiting: 141
+ID: 58, Arrival: 73, Start: 220, Finish: 227, Waiting: 147
+ID: 6, Arrival: 74, Start: 227, Finish: 237, Waiting: 153
+ID: 64, Arrival: 75, Start: 237, Finish: 241, Waiting: 162
+ID: 25, Arrival: 76, Start: 241, Finish: 249, Waiting: 165
+ID: 34, Arrival: 76, Start: 249, Finish: 259, Waiting: 173
+ID: 50, Arrival: 76, Start: 259, Finish: 262, Waiting: 183
+ID: 35, Arrival: 77, Start: 262, Finish: 266, Waiting: 185
+ID: 30, Arrival: 78, Start: 266, Finish: 275, Waiting: 188
+ID: 0, Arrival: 81, Start: 275, Finish: 280, Waiting: 194
+ID: 9, Arrival: 81, Start: 280, Finish: 289, Waiting: 199
+ID: 45, Arrival: 81, Start: 289, Finish: 292, Waiting: 208
+ID: 61, Arrival: 81, Start: 292, Finish: 295, Waiting: 211
+ID: 41, Arrival: 84, Start: 295, Finish: 300, Waiting: 211
+ID: 59, Arrival: 84, Start: 300, Finish: 310, Waiting: 216
+ID: 43, Arrival: 85, Start: 310, Finish: 318, Waiting: 225
+ID: 47, Arrival: 87, Start: 318, Finish: 322, Waiting: 231
+ID: 11, Arrival: 89, Start: 322, Finish: 329, Waiting: 233
+ID: 42, Arrival: 97, Start: 329, Finish: 335, Waiting: 232
+ID: 63, Arrival: 97, Start: 335, Finish: 339, Waiting: 238
+ID: 51, Arrival: 98, Start: 339, Finish: 345, Waiting: 241
+
+Szczegóły procesów dla LCFS:
+ID: 95, Arrival: 0, Start: 0, Finish: 17, Waiting: 0
+ID: 69, Arrival: 17, Start: 17, Finish: 33, Waiting: 0
+ID: 93, Arrival: 31, Start: 33, Finish: 46, Waiting: 2
+ID: 128, Arrival: 45, Start: 46, Finish: 58, Waiting: 1
+ID: 98, Arrival: 58, Start: 58, Finish: 77, Waiting: 0
+ID: 86, Arrival: 77, Start: 77, Finish: 91, Waiting: 0
+ID: 94, Arrival: 90, Start: 91, Finish: 107, Waiting: 1
+ID: 73, Arrival: 100, Start: 107, Finish: 121, Waiting: 7
+ID: 112, Arrival: 100, Start: 121, Finish: 133, Waiting: 21
+ID: 83, Arrival: 97, Start: 133, Finish: 149, Waiting: 36
+ID: 109, Arrival: 97, Start: 149, Finish: 169, Waiting: 52
+ID: 103, Arrival: 96, Start: 169, Finish: 183, Waiting: 73
+ID: 129, Arrival: 88, Start: 183, Finish: 194, Waiting: 95
+ID: 75, Arrival: 86, Start: 194, Finish: 212, Waiting: 108
+ID: 115, Arrival: 84, Start: 212, Finish: 224, Waiting: 128
+ID: 68, Arrival: 82, Start: 224, Finish: 236, Waiting: 142
+ID: 79, Arrival: 80, Start: 236, Finish: 248, Waiting: 156
+ID: 81, Arrival: 80, Start: 248, Finish: 263, Waiting: 168
+ID: 102, Arrival: 78, Start: 263, Finish: 273, Waiting: 185
+ID: 101, Arrival: 77, Start: 273, Finish: 286, Waiting: 196
+ID: 84, Arrival: 74, Start: 286, Finish: 301, Waiting: 212
+ID: 77, Arrival: 72, Start: 301, Finish: 314, Waiting: 229
+ID: 125, Arrival: 72, Start: 314, Finish: 326, Waiting: 242
+ID: 113, Arrival: 69, Start: 326, Finish: 341, Waiting: 257
+ID: 87, Arrival: 68, Start: 341, Finish: 353, Waiting: 273
+ID: 92, Arrival: 66, Start: 353, Finish: 372, Waiting: 287
+ID: 71, Arrival: 55, Start: 372, Finish: 386, Waiting: 317
+ID: 122, Arrival: 55, Start: 386, Finish: 404, Waiting: 331
+ID: 126, Arrival: 47, Start: 404, Finish: 420, Waiting: 357
+ID: 70, Arrival: 42, Start: 420, Finish: 432, Waiting: 378
+ID: 111, Arrival: 41, Start: 432, Finish: 450, Waiting: 391
+ID: 65, Arrival: 39, Start: 450, Finish: 464, Waiting: 411
+ID: 99, Arrival: 39, Start: 464, Finish: 481, Waiting: 425
+ID: 114, Arrival: 36, Start: 481, Finish: 501, Waiting: 445
+ID: 104, Arrival: 35, Start: 501, Finish: 515, Waiting: 466
+ID: 106, Arrival: 34, Start: 515, Finish: 529, Waiting: 481
+ID: 74, Arrival: 30, Start: 529, Finish: 547, Waiting: 499
+ID: 96, Arrival: 30, Start: 547, Finish: 561, Waiting: 517
+ID: 127, Arrival: 29, Start: 561, Finish: 578, Waiting: 532
+ID: 72, Arrival: 28, Start: 578, Finish: 592, Waiting: 550
+ID: 78, Arrival: 28, Start: 592, Finish: 608, Waiting: 564
+ID: 119, Arrival: 28, Start: 608, Finish: 619, Waiting: 580
+ID: 88, Arrival: 27, Start: 619, Finish: 638, Waiting: 592
+ID: 110, Arrival: 26, Start: 638, Finish: 650, Waiting: 612
+ID: 100, Arrival: 25, Start: 650, Finish: 667, Waiting: 625
+ID: 85, Arrival: 21, Start: 667, Finish: 684, Waiting: 646
+ID: 107, Arrival: 18, Start: 684, Finish: 698, Waiting: 666
+ID: 91, Arrival: 14, Start: 698, Finish: 713, Waiting: 684
+ID: 105, Arrival: 13, Start: 713, Finish: 726, Waiting: 700
+ID: 121, Arrival: 12, Start: 726, Finish: 745, Waiting: 714
+ID: 80, Arrival: 11, Start: 745, Finish: 755, Waiting: 734
+ID: 76, Arrival: 10, Start: 755, Finish: 774, Waiting: 745
+ID: 97, Arrival: 10, Start: 774, Finish: 787, Waiting: 764
+ID: 82, Arrival: 9, Start: 787, Finish: 800, Waiting: 778
+ID: 116, Arrival: 9, Start: 800, Finish: 815, Waiting: 791
+ID: 120, Arrival: 7, Start: 815, Finish: 831, Waiting: 808
+ID: 124, Arrival: 6, Start: 831, Finish: 844, Waiting: 825
+ID: 67, Arrival: 5, Start: 844, Finish: 864, Waiting: 839
+ID: 118, Arrival: 5, Start: 864, Finish: 874, Waiting: 859
+ID: 66, Arrival: 3, Start: 874, Finish: 888, Waiting: 871
+ID: 123, Arrival: 3, Start: 888, Finish: 907, Waiting: 885
+ID: 89, Arrival: 2, Start: 907, Finish: 917, Waiting: 905
+ID: 117, Arrival: 2, Start: 917, Finish: 927, Waiting: 915
+ID: 90, Arrival: 1, Start: 927, Finish: 938, Waiting: 926
+ID: 108, Arrival: 1, Start: 938, Finish: 952, Waiting: 937
+Analiza FCFS: {'Average Waiting Time': 113.15384615384616, 'Average Turnaround Time': 118.46153846153847}
+Analiza LCFS: {'Average Waiting Time': 429.7846153846154, 'Average Turnaround Time': 444.4307692307692}
+Symulacja zakończona. Wyniki zapisane do 'results.csv'.
+
+Results.csv
+
+Algorithm,Average Waiting Time,Average Turnaround Time,Faults
+FCFS,113.15384615384616,118.46153846153847,N/A
+LCFS,429.7846153846154,444.4307692307692,N/A
+FIFO,N/A,N/A,9
+LRU,N/A,N/A,9
+
+
+
+wykres_5.png
+
+
+_______________________________________________________________
+
+
+Liczba procesów: 47
+Liczba żądań stron: 16
+Liczba ramek w pamięci: 21
+
+Szczegóły procesów dla FCFS:
+ID: 14, Arrival: 0, Start: 0, Finish: 5, Waiting: 0
+ID: 15, Arrival: 7, Start: 7, Finish: 8, Waiting: 0
+ID: 38, Arrival: 13, Start: 13, Finish: 18, Waiting: 0
+ID: 42, Arrival: 15, Start: 18, Finish: 26, Waiting: 3
+ID: 33, Arrival: 16, Start: 26, Finish: 36, Waiting: 10
+ID: 18, Arrival: 18, Start: 36, Finish: 46, Waiting: 18
+ID: 13, Arrival: 19, Start: 46, Finish: 53, Waiting: 27
+ID: 41, Arrival: 21, Start: 53, Finish: 54, Waiting: 32
+ID: 2, Arrival: 22, Start: 54, Finish: 58, Waiting: 32
+ID: 6, Arrival: 22, Start: 58, Finish: 68, Waiting: 36
+ID: 3, Arrival: 23, Start: 68, Finish: 74, Waiting: 45
+ID: 20, Arrival: 25, Start: 74, Finish: 76, Waiting: 49
+ID: 26, Arrival: 25, Start: 76, Finish: 82, Waiting: 51
+ID: 37, Arrival: 26, Start: 82, Finish: 90, Waiting: 56
+ID: 9, Arrival: 27, Start: 90, Finish: 99, Waiting: 63
+ID: 5, Arrival: 29, Start: 99, Finish: 108, Waiting: 70
+ID: 31, Arrival: 30, Start: 108, Finish: 116, Waiting: 78
+ID: 40, Arrival: 31, Start: 116, Finish: 124, Waiting: 85
+ID: 45, Arrival: 32, Start: 124, Finish: 132, Waiting: 92
+ID: 46, Arrival: 32, Start: 132, Finish: 133, Waiting: 100
+ID: 0, Arrival: 41, Start: 133, Finish: 134, Waiting: 92
+ID: 12, Arrival: 42, Start: 134, Finish: 135, Waiting: 92
+ID: 43, Arrival: 43, Start: 135, Finish: 139, Waiting: 92
+ID: 10, Arrival: 52, Start: 139, Finish: 148, Waiting: 87
+ID: 27, Arrival: 58, Start: 148, Finish: 149, Waiting: 90
+ID: 29, Arrival: 62, Start: 149, Finish: 153, Waiting: 87
+ID: 34, Arrival: 63, Start: 153, Finish: 159, Waiting: 90
+ID: 44, Arrival: 63, Start: 159, Finish: 162, Waiting: 96
+ID: 28, Arrival: 64, Start: 162, Finish: 172, Waiting: 98
+ID: 1, Arrival: 67, Start: 172, Finish: 177, Waiting: 105
+ID: 30, Arrival: 67, Start: 177, Finish: 182, Waiting: 110
+ID: 4, Arrival: 68, Start: 182, Finish: 189, Waiting: 114
+ID: 39, Arrival: 68, Start: 189, Finish: 191, Waiting: 121
+ID: 32, Arrival: 71, Start: 191, Finish: 201, Waiting: 120
+ID: 8, Arrival: 76, Start: 201, Finish: 210, Waiting: 125
+ID: 11, Arrival: 78, Start: 210, Finish: 217, Waiting: 132
+ID: 36, Arrival: 79, Start: 217, Finish: 222, Waiting: 138
+ID: 24, Arrival: 80, Start: 222, Finish: 225, Waiting: 142
+ID: 21, Arrival: 81, Start: 225, Finish: 231, Waiting: 144
+ID: 23, Arrival: 83, Start: 231, Finish: 234, Waiting: 148
+ID: 17, Arrival: 86, Start: 234, Finish: 238, Waiting: 148
+ID: 7, Arrival: 87, Start: 238, Finish: 243, Waiting: 151
+ID: 25, Arrival: 89, Start: 243, Finish: 248, Waiting: 154
+ID: 35, Arrival: 89, Start: 248, Finish: 257, Waiting: 159
+ID: 22, Arrival: 91, Start: 257, Finish: 258, Waiting: 166
+ID: 16, Arrival: 96, Start: 258, Finish: 263, Waiting: 162
+ID: 19, Arrival: 96, Start: 263, Finish: 270, Waiting: 167
+
+Szczegóły procesów dla LCFS:
+ID: 65, Arrival: 0, Start: 0, Finish: 13, Waiting: 0
+ID: 76, Arrival: 6, Start: 13, Finish: 27, Waiting: 7
+ID: 69, Arrival: 19, Start: 27, Finish: 46, Waiting: 8
+ID: 71, Arrival: 46, Start: 46, Finish: 57, Waiting: 0
+ID: 55, Arrival: 56, Start: 57, Finish: 75, Waiting: 1
+ID: 56, Arrival: 73, Start: 75, Finish: 88, Waiting: 2
+ID: 72, Arrival: 85, Start: 88, Finish: 107, Waiting: 3
+ID: 57, Arrival: 100, Start: 107, Finish: 126, Waiting: 7
+ID: 58, Arrival: 100, Start: 126, Finish: 144, Waiting: 26
+ID: 48, Arrival: 98, Start: 144, Finish: 163, Waiting: 46
+ID: 78, Arrival: 97, Start: 163, Finish: 182, Waiting: 66
+ID: 74, Arrival: 93, Start: 182, Finish: 197, Waiting: 89
+ID: 47, Arrival: 91, Start: 197, Finish: 208, Waiting: 106
+ID: 89, Arrival: 85, Start: 208, Finish: 218, Waiting: 123
+ID: 49, Arrival: 82, Start: 218, Finish: 233, Waiting: 136
+ID: 80, Arrival: 81, Start: 233, Finish: 249, Waiting: 152
+ID: 91, Arrival: 78, Start: 249, Finish: 266, Waiting: 171
+ID: 62, Arrival: 77, Start: 266, Finish: 282, Waiting: 189
+ID: 66, Arrival: 77, Start: 282, Finish: 301, Waiting: 205
+ID: 79, Arrival: 73, Start: 301, Finish: 320, Waiting: 228
+ID: 63, Arrival: 70, Start: 320, Finish: 332, Waiting: 250
+ID: 86, Arrival: 64, Start: 332, Finish: 350, Waiting: 268
+ID: 88, Arrival: 55, Start: 350, Finish: 361, Waiting: 295
+ID: 60, Arrival: 51, Start: 361, Finish: 373, Waiting: 310
+ID: 64, Arrival: 51, Start: 373, Finish: 387, Waiting: 322
+ID: 83, Arrival: 51, Start: 387, Finish: 398, Waiting: 336
+ID: 75, Arrival: 49, Start: 398, Finish: 412, Waiting: 349
+ID: 92, Arrival: 46, Start: 412, Finish: 425, Waiting: 366
+ID: 59, Arrival: 44, Start: 425, Finish: 439, Waiting: 381
+ID: 70, Arrival: 44, Start: 439, Finish: 453, Waiting: 395
+ID: 77, Arrival: 44, Start: 453, Finish: 473, Waiting: 409
+ID: 85, Arrival: 43, Start: 473, Finish: 484, Waiting: 430
+ID: 82, Arrival: 41, Start: 484, Finish: 498, Waiting: 443
+ID: 81, Arrival: 40, Start: 498, Finish: 518, Waiting: 458
+ID: 54, Arrival: 38, Start: 518, Finish: 534, Waiting: 480
+ID: 50, Arrival: 34, Start: 534, Finish: 552, Waiting: 500
+ID: 51, Arrival: 32, Start: 552, Finish: 569, Waiting: 520
+ID: 93, Arrival: 29, Start: 569, Finish: 585, Waiting: 540
+ID: 52, Arrival: 18, Start: 585, Finish: 597, Waiting: 567
+ID: 53, Arrival: 18, Start: 597, Finish: 609, Waiting: 579
+ID: 61, Arrival: 18, Start: 609, Finish: 622, Waiting: 591
+ID: 84, Arrival: 18, Start: 622, Finish: 637, Waiting: 604
+ID: 68, Arrival: 17, Start: 637, Finish: 656, Waiting: 620
+ID: 67, Arrival: 15, Start: 656, Finish: 673, Waiting: 641
+ID: 87, Arrival: 5, Start: 673, Finish: 692, Waiting: 668
+ID: 73, Arrival: 0, Start: 692, Finish: 708, Waiting: 692
+ID: 90, Arrival: 0, Start: 708, Finish: 720, Waiting: 708
+Analiza FCFS: {'Average Waiting Time': 88.87234042553192, 'Average Turnaround Time': 94.46808510638297}
+Analiza LCFS: {'Average Waiting Time': 303.97872340425533, 'Average Turnaround Time': 319.29787234042556}
+Symulacja zakończona. Wyniki zapisane do 'results.csv'.
+
+Results.csv
+
+Algorithm,Average Waiting Time,Average Turnaround Time,Faults
+FCFS,88.87234042553192,94.46808510638297,N/A
+LCFS,303.97872340425533,319.29787234042556,N/A
+FIFO,N/A,N/A,7
+LRU,N/A,N/A,5
+
+
+
+wykres_6.png
+
+
+_______________________________________________________________
+
+
+
+
+
+
